@@ -18,7 +18,7 @@ public class Program
 
                 services.AddHttpClient<IConversionRate, ConversionRate>(client =>
                 {
-                    client.BaseAddress = new Uri(configuration["ApiSettings:ExchangeRateApiBaseUrl"]);
+                    client.BaseAddress = new Uri(configuration["ApiSettings:https://v6.exchangerate-api.com/v6/feb628771760a04e158f0340/latest/USD"]);
                 });
 
                 services.AddControllers();
